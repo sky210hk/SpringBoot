@@ -1,0 +1,23 @@
+package com.simple.basic.command;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class validVO {
+
+	//1.스프링부트 JPA 라이브러리를 사용하면 기본타입은 null을 가질수 없기 때문에 값에 맵핑이 안됩니다.
+	//그래서 wrapper형으로반드시 선언합니다.
+	/*
+	 * 2.유효성 검사에 필요한 멤버변수에 어노테이션 설정
+	 */
+	private String name;
+	private Integer salary;
+	private String phone; 
+	private String email;
+}

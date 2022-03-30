@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+		
+		<h3>타임리프 include, replace</h3>
+		<div th:replace= "~{/include/layout01 :: part1}"></div>
+
+</body>
+</html>

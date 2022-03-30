@@ -1,0 +1,12 @@
+package com.simple.basic.command;
+
+import lombok.Builder;
+
+@Builder	//빌더 패턴을 사용가능
+public class BuilderVO2 {
+	
+	private String name;
+	private int age;
+	
+	
+}

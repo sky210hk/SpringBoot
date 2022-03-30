@@ -1,0 +1,59 @@
+package com.coding404.myweb.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.coding404.myweb.practice.PracticeService;
+
+@Controller
+@RequestMapping("/practice")
+public class PracticeController {
+
+	@Autowired
+	@Qualifier("practiceService")
+	private PracticeService practiceService;
+	
+	@GetMapping("topicReg")
+	public String topicReg() {
+		
+		return "practice/topicReg";
+	}
+	@GetMapping("regForm")
+	public String regForm() {
+		
+		return "practice/regForm";
+	}
+	
+	
+	
+	
+	
+	
+	@GetMapping("topicListAll")
+	public String topicListAll() {
+		
+		return "practice/topicListAll";
+	}
+	@GetMapping("topicListMe")
+	public String topicListMe() {
+		
+		return "practice/topicListMe";
+	}
+	@GetMapping("topicDetail")
+	public String topitDetail() {
+		
+		return "practice/topicDetail";
+		
+		
+	}
+	
+	
+	@GetMapping("topicModify")
+	public String topicModify() {
+		
+		return "practice/topicModify";
+	}
+}

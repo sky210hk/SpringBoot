@@ -1,0 +1,37 @@
+package com.coding404.myweb.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.coding404.myweb.command.ProductVO;
+
+@Controller
+@RequestMapping("/product")
+public class ProducetController {
+	
+	@GetMapping("productReg")
+	public String pruductReg() {
+		
+		return "product/productReg";
+	}
+	@GetMapping("productList")
+	public String productList() {
+		return "product/productList";
+	}
+	@GetMapping("productDetail")
+	public String productDetail() {
+		
+		return "product/productDetail";
+	}
+	//상품등록폼
+	@PostMapping("productForm")
+	public String productForm(ProductVO vo) {
+		
+		System.out.println(vo.toString());
+		
+		
+		return "redirect:/product/productList";//등록이후 목록화면으로
+	}
+}

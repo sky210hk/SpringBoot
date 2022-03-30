@@ -1,0 +1,44 @@
+package com.simple.basic.controller;
+
+import java.util.List;
+
+import javax.validation.Valid;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.Errors;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.simple.basic.command.validVO;
+
+@Controller
+@RequestMapping("/valid")
+public class VaildController {
+
+	//화면처리
+	@GetMapping("/view")
+	public void view() {
+		
+	}
+	//유해성 검증 작업 수행시 @Valid어노테이션, validation 패키지의 Errors인터페이스를 같이선언 
+	@PostMapping("/viewForm")
+	public String viewForm(@Valid validVO vo, Errors erros) {
+		
+		if(erros.hasErrors()) {//유효성 검사에 실패한 결과가 있다면 true
+//			System.out.println("유효성 검사 실패");
+		
+		List<FieldError>list=erros.getFieldErrors();		
+		}
+		
+		
+		
+
+		return "redirect:/valid/result";//결과화면으로 리다이렉트
+	}
+	@GetMapping("result")
+	public void result() {
+		
+	}
+}

@@ -1,0 +1,4 @@
+server.port=8181
+
+##############테이터베이스 연결 JPA가 자동으로 처리###############
+spring.datasource.driver-class-name=oracle.jdbc.OracleDriver

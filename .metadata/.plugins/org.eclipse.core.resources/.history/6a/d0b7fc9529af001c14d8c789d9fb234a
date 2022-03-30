@@ -1,0 +1,12 @@
+package com.simple.basic.memo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public interface MemoService {
+
+
+	
+	public String getTime();
+	
+}

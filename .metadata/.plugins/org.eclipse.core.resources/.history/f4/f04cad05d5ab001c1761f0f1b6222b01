@@ -1,0 +1,8 @@
+server:
+  port: 8181
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    password: spring
+    url: jdbc:oracle:thin:@localhost:1521/XEPDB1
+    username: spring

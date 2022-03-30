@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>자바스크립트! </h3>
+[[${vo}]]<Br>
+[[${arr}]]<Br>
+[[${name}]]
+<script th:inline="javascript">var aa=[[${name}]]</script>
+<script th:inline="javascript">var bb=[[${arr[0]}]]</script>
+<script th:inline="javascript">var cc=[[${vo.last}]]</script>
+console.log()
+</body>
+</html>

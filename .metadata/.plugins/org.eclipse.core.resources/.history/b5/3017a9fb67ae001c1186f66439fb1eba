@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+<th:block th:replace ="~{/include/layout03 :: 함수(~{:: #first})}">
+
+
+	<div id="first"></div>
+
+
+</th:block>
+
+
+
+
+</html>

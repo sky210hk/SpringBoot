@@ -1,0 +1,9 @@
+package com.simple.basic.command;
+
+public class SimpleVO {
+//spring boot 에서는 vo를 표기할때 wrapper로 선언한다
+	
+	 private int a;
+	 private String first;
+	 private String last;
+}

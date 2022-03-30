@@ -1,0 +1,14 @@
+package templates.memo;
+
+public class Snippet {
+	@Autowired
+	private MemoMapper memoMapper;
+	
+	
+	@Test
+	public void test01() {
+	String time = memoMapper.getTime();	
+		System.out.println(time);
+	}
+}
+

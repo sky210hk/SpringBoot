@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h3>th:each반복문</h3>
+	
+	<ul>
+		<li th:each="vo:${list}">
+		[[${vo}]]
+		[[${vo.a}]]
+		[[${vo.first}]]
+		[[${vo.last}]]
+		[[${vo.regdate}]]
+	</ul>
+	<h3>반복문과state 객체</h3>
+	
+	<ul>
+		<li th:each ="vo, state : ${list}">
+		[[${vo}]]
+		[[${vo.a}]]
+		[[${vo.first}]]
+		[[${vo.last}]]
+		[[${vo.regdate}]]
+		</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+		
+		<h3>타임리프 include, replace</h3>
+		<!-- ~{/경로/경로 ::fragment 이름 } -->
+		<div th:replace= "~{/include/layout01 :: part2}"></div>
+		<th:block th:replace="~{/include/layout01 :: part1}"></th:block>
+		<hr>
+		<th:block th:replace="~{/include/layout02}"
+</body>
+</html>

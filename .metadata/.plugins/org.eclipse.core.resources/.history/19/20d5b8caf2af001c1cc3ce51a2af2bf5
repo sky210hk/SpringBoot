@@ -1,0 +1,6 @@
+package com.coding404.myweb.Product;
+
+public interface ProductService {
+
+	
+}

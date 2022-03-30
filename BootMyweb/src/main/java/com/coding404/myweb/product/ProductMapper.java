@@ -1,0 +1,11 @@
+package com.coding404.myweb.product;
+
+import org.apache.ibatis.annotations.Mapper;
+
+import com.coding404.myweb.command.ProductVO;
+@Mapper
+public interface ProductMapper {
+
+public int regist(ProductVO vo);
+	
+}

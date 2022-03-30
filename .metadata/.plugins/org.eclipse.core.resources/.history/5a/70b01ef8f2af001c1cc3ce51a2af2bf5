@@ -1,0 +1,9 @@
+package com.coding404.myweb.Product;
+
+import org.springframework.stereotype.Service;
+
+@Service("ProductService")
+public class productServiceImpl implements ProductService {
+
+	
+}

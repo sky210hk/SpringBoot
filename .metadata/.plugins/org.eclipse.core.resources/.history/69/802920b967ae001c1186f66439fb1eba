@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+<th:block th:replace ="~{/include/layout03 :: 함수()}">
+
+</th:block>
+
+
+
+
+</html>

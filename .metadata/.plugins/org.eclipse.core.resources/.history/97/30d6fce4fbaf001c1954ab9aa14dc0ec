@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>연습용</title>
+
+    <meta charset="UTF-8" />
+    <meta charset="EUC-KR" />
+
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+	<link rel="stylesheet" type="text/css" href="../css/loading.css" />
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="../js/jquery-1.12.1.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/style.js"></script>
+    
+</head>

@@ -1,0 +1,29 @@
+package com.simple.basic.config;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+@Configuration
+//@PropertySource("classpath:/application.properties")//해당파일참저
+public class WebConfig implements WebMvcConfigurer {
+	//IOC팩토리
+	@Autowired
+	private ApplicationContext applicationContext;
+	
+	//application.properties 값을 직접 참조
+	@Value("${spring.datasource.url}")
+	private String url;
+	@Value("${server.port}")
+	private String port;
+	
+	@Bean
+	public void test(){
+		System.out.println("테스트빈 생성!");
+		System.out.println("application프로펄티 안에 값:" + url);
+		System.err.println(" 포트값:" + port);
+	}
+}
